@@ -1,0 +1,31 @@
+body > header {
+    background: salmon;
+    border-bottom:
+}
+
+body > main {
+    margin: 2em auto;
+    padding: 1.5;
+}
+
+body > header> nav > ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    width: 75%;
+}
+
+body > header > nav > ul > li {
+    display: inline-block;
+    padding: .5em 1.5em;
+    border: 1px solid red;                                                                                                                                                                                                                                    
+}
+
+body > header > nav > ul > li:hover a {
+    background: pink;                                                                                                                                                                                                                                   
+}
+
+body > header > nav > ul > li > a:after {
+    content: '';
+    position: 
+}
