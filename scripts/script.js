@@ -119,8 +119,6 @@ Store.prototype.perCook = function () {
 };
 
 
-
-
 var firstPike = new Store('1st and Pike', 23, 65, 6.3);
 var seaTac = new Store('SeaTac Airport', 3, 24, 1.2);
 var center = new Store('Seattle Center', 11, 38, 3.7);
@@ -128,32 +126,53 @@ var hill = new Store('Capitol Hill', 20, 38, 2.3);
 var alki = new Store('Alki', 2, 16, 4.6);
 
 
+// function createHeader () {
 
-function render () {
+//   var section = document.getElementById('table');
 
-  var section = document.getElementById('locations');
-
-  for( var i = 0; i < listOfStores.length; i++) {
-
-    var location = listOfStores[i];
-
-    var title = document.createElement('h3');
-    title.textContent = listOfStores[i].name;
-    section.appendChild(title);
-
-    var list = document.createElement('ul');
-
-    for ( var x = 0; x < hours.length; x++) {
-      var projection = hours[x] + ': ' + location.hourlySale[x];
-      var li = document.createElement('li');
-      li.textContent = projection;
-      list.appendChild(li);
-    }
+//   var row = document.createElement('thead');
+//   section.appendChild(row);
+//   row.id = 'time';
+//   var whereIsRow = document.getElementById('time');
 
 
-    section.appendChild(list);
+//   for ( var i = 0; i < hours.length; i++) {
+//     var projection = hours[i];
+//     var li = document.createElement('th');
+//     li.textContent = projection;
+//     whereIsRow.appendChild(li);
+//   }
+// }
+
+
+function createBody () {
+
+  var section = document.getElementById('table');
+
+
+  for ( var x = 0; x < hours.length; x++) {
+    var projection = location.hourlySale[x];
+    var li = document.createElement('th');
+    li.textContent = projection;
+    list.appendChild(li);
   }
+
+
+  section.appendChild(list);
 }
+
+
+
+// for( var i = 0; i < listOfStores.length; i++) {
+
+//   var location = listOfStores[i];
+
+//   var title = document.createElement('td');
+//   title.textContent = listOfStores[i].name;
+//   section.appendChild(title);
+
+//   var list = document.createElement('tr');
+// }
 
 function initialize() {
   firstPike.perCook();
@@ -164,7 +183,9 @@ function initialize() {
 }
 
 initialize();
-render();
+// createHeader();
+createBody();
+// createFooter();
 
 for (var j = 0; j < listOfStores.length; j++){
   listOfStores[j].randomCust();
