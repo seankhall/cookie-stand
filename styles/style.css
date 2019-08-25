@@ -2,22 +2,19 @@
     text-align: center;
 }
 
-.center {
-    width: 900px;
-    margin:0 auto;
+html {
+    background: orange;
 }
 
 body > header {
     background: salmon;
 }
 
-body > main {
-    margin: 2em auto;
-    padding: 1.5;
+#header {
+    font-family: 'Lobster', cursive;
 }
 
 body > header> nav > ul {
-    list-style-type: none;
     margin: auto;
     padding: 0;
     width: 75%;
@@ -25,14 +22,69 @@ body > header> nav > ul {
 
 body > header > nav > ul > li {
     display: inline-block;
-    padding: .5em 1.5em;
-    border: 1px solid red;                                                                                                                                                                                                                                    
+    padding: .5em 1.5em;                                                                                                                                                                                                                                 */
 }
 
-body > header > nav > ul > li:hover a {
-    background: pink;                                                                                                                                                                                                                                   
+a:link {
+    color: black;
+    text-decoration: none;
 }
 
-body > header > nav > ul > li > a:after {
-    content: '';
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: white;
+}
+
+.center {
+    margin:0 auto;
+    width: 900px;
+}
+
+#main {
+    background: pink;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+body > main {
+    margin: 2em auto;
+    padding: 1.5;
+}
+
+h1 {
+    font-size: 70px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+#table {
+    font-family: 'Ariel', sans-serif;
+}
+
+img {
+    margin-bottom: 5px;
+    margin-top: 5px
+}
+
+footer {
+    background-color: salmon;
+    font-size: 50px;
+    text-decoration: underline;
 }
