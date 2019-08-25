@@ -1,6 +1,14 @@
+* {
+    text-align: center;
+}
+
+.center {
+    width: 900px;
+    margin:0 auto;
+}
+
 body > header {
     background: salmon;
-    border-bottom:
 }
 
 body > main {
@@ -27,5 +35,4 @@ body > header > nav > ul > li:hover a {
 
 body > header > nav > ul > li > a:after {
     content: '';
-    position: 
 }

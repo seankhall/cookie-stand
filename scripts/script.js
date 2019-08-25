@@ -42,7 +42,7 @@ function createTable () {
   var firstColumnCell = document.createElement('th');  
   var tableHeadElement = document.createElement('th');
 
-  firstColumnCell.textContent = 'empty';
+  firstColumnCell.textContent = '';
   tableRowElement.appendChild(firstColumnCell);
 
   for ( var i = 0; i < hours.length; i++) {
