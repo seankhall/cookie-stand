@@ -24,17 +24,21 @@
         </section>
 
         <table>
-            <thead>
-                <th></th>
-            </thead>
-
             <tbody  id="table">
             </tbody>
-
-            <tfoot>
-                <tf></tf>
-            </tfoot>
         </table>
+        
+        <form id="submit">
+            <label for="location">Location</label>
+            <input type="text" name="name" placeholder="Enter New Location" required>
+            <label for="min-cust">Minimum Customers</label>
+            <input type="text" name="min-cust" placeholder="0" required>
+            <label for="max-cust">Maximum Customers</label>
+            <input type="text" name="max-cust" placeholder="0" required>
+            <label for="avg-cookies">Average Cookies per Customer</label>
+            <input type="text" name="avg-cookies" placeholder="0" required>
+            <button id="submit-button" type="button" onclick="submitNewData()">Enter New Store</button>
+        </form>
 
     </main>
     
