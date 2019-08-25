@@ -2,9 +2,6 @@
 
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm','7pm', '8pm'];
 
-// var locations = [];
-
-
 var listOfStores = [];
 
 function Store(name, minCust, maxCust, avgCook) {
@@ -16,9 +13,6 @@ function Store(name, minCust, maxCust, avgCook) {
   listOfStores.push(this);
   this.dailyCookies = 0;
 }
-
-// Store.prototype.hoursOpen = hours.length;
-// Store.prototype.salesTotal = 0;
 
 Store.prototype.randomCust = function () {
   return Math.floor(Math.random() * (this.maxCust - this.minCust + 1)) + this.minCust;
@@ -119,14 +113,3 @@ function initialize() {
 
 initialize();
 createTable();
-// createBody();
-// createFooter();
-
-// for (var j = 0; j < listOfStores.length; j++){
-//   listOfStores[j].randomCust();
-//   listOfStores[j].perCook();
-// }
-
-// for ( var i = 0; i < listOfStores.length; i++ ) {
-//   console.log(listOfStores[i]);
-// }
